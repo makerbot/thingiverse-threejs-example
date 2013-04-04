@@ -1,0 +1,5 @@
+All STLs on Thingiverse have been pre-parsed into Three.js json format.  The Thingiverse File API provides a threejs_url and that URL can be loaded directly into Three.js's JSONLoader. (we have CORS setup to allow loading it cross-site)
+
+http://www.thingiverse.com/developers/rest-api-reference
+
+http://mrdoob.github.com/three.js/docs/57/#Reference/Loaders/JSONLoader
