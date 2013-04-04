@@ -61,7 +61,7 @@
 	<body>
 		<div id="info">
 			<a href="http://threejs.org" target="_blank">three.js</a> - <a href="http://thingiverse.com">thingiverse</a> loader<br/>
-			<input type="button" value="Find Thing" onclick="TV.dialog('thing_search', {q: 'makerbot'}, selectedThing)"/>
+			<input type="button" value="Find Thing" onclick="TV.dialog('thing_search', {q: 'customized'}, selectedThing)"/>
 		</div>
 
 		<script src="js/json2.js"></script>
