@@ -2,8 +2,8 @@
 	// live site = http://thingiverse.com/login/oauth/access_token
 	$auth_url = 'http://thingiverse.dev:8888/login/oauth/access_token';
 	// set client id and secret to your own app!
-	$client_id = 'ec403c97e7468a2bf3e0';
-	$client_secret = 'e743edeb6a185ec05f306d9eb63403ad';
+	$client_id = '40328fee7cf380648ae6';
+	$client_secret = 'f5d579e59a59894f96fb1d8ce875b4f1';
 	$code = $_GET['code'];
 	
 	$context = stream_context_create(array(
@@ -123,15 +123,16 @@
 					var obj, i;
 					for ( i = scene.children.length - 1; i >= 0 ; i -- ) {
 					    obj = scene.children[ i ];
-					    if ( obj !== plane && obj !== camera) {
+					    if ( obj !== camera) {
 					        scene.remove(obj);
 					    }
 					}
 					var mesh = new THREE.Mesh( geometry, material );
 					scene.add( mesh );
 				};
-        		// var url = "http://www.thingiverse.com/download:167199?format=json";
-        		var url = "http://thingiverse-production.s3.amazonaws.com/threejs_json/77/c8/5b/5e/82/67d78769DunnyFigure4in.js";
+				// unfortunately, JSONLoader won't follow redirects... have to handle that yourself and get final url...
+        		// var url = "http://www.thingiverse.com/download:167397?format=json";
+        		var url = "http://thingiverse-production.s3.amazonaws.com/threejs_json/70/42/c4/f6/d6/c96461c9bearing_20130404-23308-1fcl0el-0.js";
 				loader.load(url, loadCallback);
 
 				// renderer
